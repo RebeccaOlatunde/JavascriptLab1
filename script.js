@@ -25,7 +25,7 @@ let counter = 0;
 let randomNumber = 0;
 
 while (randomNumber !== 5) {
-  randomNumber = Math.floor(Math.random() * 11);
+  randomNumber = Math.floor(Math.random() * 10 + 1);
   if (randomNumber !== 5) {
     counter++;
     console.log(`${randomNumber} does not equal 5`);
