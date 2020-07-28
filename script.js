@@ -1,6 +1,6 @@
 
 let name = "rebecca";
-let age = 32;
+let age = 33;
 let birthday = "January 24";
 let detroitGC = true;
 let lifeEvents = [
