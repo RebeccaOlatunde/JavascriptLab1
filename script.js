@@ -38,23 +38,14 @@ while (randomNumber !== 5) {
 }
 
 let hours = prompt("please type the number of hours your worked");
-let wage = prompt(
-  "please type the number for your hourly wage without the dollar sign"
-);
+let wage = prompt("Enter the number for your hourly wage without the dollar sign");
 let totalPaycheck;
 
-if (hours > 40) {
-  totalPaycheck = 40 * wage + (hours - 40) * (wage * 1.5);
-  console.log(
-    `You worked ${hours} hours that means you get a bonus. At ${wage}$ an hour, you will receive ${totalPaycheck}`
-  );
+if (hours <= 40) {
+let paycheck=hours * wage;
+  console.log(paycheck);
 } else {
-  totalPaycheck = hours * wage;
-  console.log(
-    `Since you only worked ${hours} hours, you will get a paycheck in the amount of ${totalPaycheck}`
-  );
-}
-
-let numberOfWeeks = 1000000 / totalPaycheck;
-let rounded = Math.ceil(numberOfWeeks);
-console.log(rounded);
+  let overtime = (hours - 40)*(wage * 1.5);
+  let paycheck = 40 * wage + overtime;
+  let weeks = math.ceil(1000000 / Paycheck);
+   console.log('with wage=${wage} and hours = ${hours} it would take ${weeks} 
